@@ -7,7 +7,7 @@
       Each feature has an xml file to define the feature components
 
   ===========================================================================
-  Copyright (c) 2019 Qualcomm Technologies, Inc.
+  Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
   ===========================================================================
@@ -27,16 +27,10 @@
     </Configs>
     <Profiles>
         <Profile>
-            <!-- Default Enable Colocation v3,
-                               sched_min_task_util_for_boost 51,
-                               sched_min_task_util_for_colocation 35
-                               BIG min_cpus 2 -->
-            <DEFAULT>0x40C7C000,51,0x40C78000,35,0x41000000,2</DEFAULT>
-             <!-- For Games disable Colocation v3,
-                                sched_min_task_util_for_boost 0,
-                                sched_min_task_util_for_colocation 0
-                                BIG min_cpus 3 -->
-            <SKEW2>0x40C7C000,0,0x40C78000,0,0x41000000,3</SKEW2>
+            <!-- Colocation v3 1 GHz, Predictive Load 1 -->
+            <DEFAULT>0x40c6c000,1000000,0x41444000,1</DEFAULT>
+            <!-- Colocation v3 1 GHz, Predictive Load 1 -->
+            <SKEW2>0x40c6c000,1000000,0x41444000,1</SKEW2>
         </Profile>
     </Profiles>
 
