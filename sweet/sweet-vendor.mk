@@ -345,7 +345,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     sensors.touch \
     batterysecret \
-    cnss-daemon \
     mi_thermald \
     sensors.qti \
     thermal-engine
